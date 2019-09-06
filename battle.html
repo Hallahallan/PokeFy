@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="battle.css">
+    </head>
+    <body>
+        <div id="animation-space">
+            <div class="object" id="menu">
+                <div id="text-box"></div>
+                <div id="moves"></div>
+                
+                <!--
+                    <button id="move-button-0"> <span class="move" id="move-0"></span></button>
+                    <button id="move-button-1"> <span class="move" id="move-1"></span></button>
+                    <button id="move-button-2"> <span class="move" id="move-2"></span></button>
+                    <button id="move-button-3"> <span class="move" id="move-3"></span></button>
+                -->
+                    <button type="button" class="move" id="move-button-0"></button>
+                    <button type="button" class="move" id="move-button-1"></button>
+                    <button type="button" class="move" id="move-button-2"></button>
+                    <button type="button" class="move" id="move-button-3"></button>
+            </div>
+            
+            <div class="object" id="player">
+                <div class="pkmn" id="player-pkmn">
+                    <img id="players-pkmn" src="">
+                </div>
+                <div class="stats" id="player-stats"></div>
+                    <div class="name" id="player-name"></div>
+                    <div class="level" id="player-level"> </div>
+                    <div class="hp-bar" id="player-hp-bar">
+                        <div class="hp-current" id="player-hp-current"></div></div>
+                    <div class="hp" id="player-hp"></div>
+                    <div class="visuals" id="player-visuals">
+                        <div class="line1" id="player-line1"></div> 
+                        <div class="line2" id="player-line2"></div>
+                        <div class="triangle" id="player-triangle"></div>
+                    </div>
+            </div>
+            
+            <div class="object" id="enemy">
+                <div class="pkmn enemy-spawn-animation" id="enemy-pkmn">
+                    <img id="enemys-pkmn" src="">
+                </div>
+                <div class="stats" id="enemy-stats"></div>
+                    <div class="name" id="enemy-name"></div>
+                    <div class="level" id="enemy-level"></div>
+                    <div class="hp-bar" id="enemy-hp-bar">
+                        <div class="hp-current" id="enemy-hp-current"></div></div>
+               <!-- <div class="hp" id="enemy-hp">140/140</div> -->
+                    <div class="visuals" id="enemy-visuals">
+                        <div class="line1" id="enemy-line1"></div> 
+                        <div class="line2" id="enemy-line2"></div>
+                        <div class="triangle" id="enemy-triangle"></div>
+                    </div>
+            </div>
+            
+        </div>
+        
+        <script type="text/javascript" src="scripts/items.js"></script>
+        <script type="text/javascript" src="scripts/moves.js"></script>
+        <script type="text/javascript" src="scripts/pokedex.js"></script>
+        <script type="text/javascript" src="scripts/battle.js"></script>
+        <script type="text/javascript" src="scripts/battleScript.js"></script>
+
+        
+    </body>
+
+</html>

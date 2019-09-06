@@ -1,0 +1,278 @@
+body{
+    height: 144px;
+    width: 160px;
+    border: 1px solid #000;
+}
+#animation-space{
+    height: 144px;
+    width: 160px;
+    position: relative;
+    overflow: hidden;
+}
+#animation-space *{
+    position: absolute;
+}
+#players-pkmn{
+    height: 48px;
+    bottom: -4px;
+    left: 16px;
+}
+.object{
+    margin: 0;
+}
+#text-box{
+    font-size: 6px;
+    height: 44px;
+    width: 76px;
+    right: 1;
+    bottom: 1;
+}
+#menu{
+    bottom: 0;
+    border: 1px solid #000;
+    height: 46px;
+    width: 158px;
+    z-index: 2;
+    background-color: white;
+
+}
+#player{
+    bottom: 48px;
+    height: 48px;
+    width: 160px;  
+}
+#enemy{
+    bottom: 96px;
+    height: 48px;
+    width: 160px;  
+}
+
+#move-button-0{
+    z-index: 100;
+}
+#move-button-1{
+    top: 12px;
+}
+#move-button-2{
+    top: 24px;
+}
+#move-button-3{
+    top: 36px;
+}
+
+.move{ 
+
+    height: 10px;
+    width: 80px;
+    font-size: 5px;  
+    text-align: center;
+    vertical-align: text-top;
+    line-height: 2;
+    
+    
+    
+}
+/*
+#move-0{
+    top: -1px;
+    left: -1px
+}
+#move-1{
+    top: -1px;
+    left: 77px
+}
+#move-2{
+    top: 21px;
+    left: -1px
+}
+#move-3{
+    top: 21px;
+    left: 77px
+}*/
+
+
+
+
+.pkmn{
+    height: 48px;
+    width: 64px;
+}
+#player-pkmn{
+    left: 0;
+    bottom: -2px;
+    
+}
+#enemy-pkmn{
+    right: -4px;
+    bottom: 0px;
+}
+
+
+.stats{
+    height: 48px;
+    width: 96px;
+}
+#player-stats{
+    right: 0;
+}
+#enemy-stats{
+    left: 0;
+}
+
+.name{
+    height: 10px;
+    font-size: 8px;
+    z-index: 1;
+}
+#player-name{
+    left: 80px;
+    top: 8px;
+}
+#enemy-name{
+    left: 3px;
+}
+
+
+.level{
+    font-size: 8px;
+    font-weight: bold;
+    z-index: 1;
+    top: 8px;
+}
+#player-level{
+    right: 20px;
+}
+#enemy-level{
+    left: 20px;
+}
+
+
+/* burde lages til et eget object. en strek med en halvsirkel i hver ende*/
+.hp-bar{ 
+    height: 4px;
+    width: 58px;
+    border-radius: 10%;
+    background-color: black;
+    top: 18px;
+    z-index: 1;
+}
+#player-hp-bar{
+    left: 90px
+}
+#enemy-hp-bar{
+    left: 20px;
+}
+
+.hp-current{
+    top: 1px;
+    left: 1px;
+    height: 2px;
+
+    background-color: indianred;
+}
+#player-hp-current{
+    width: 56px;
+}
+#enemy-hp-current{
+    width: 56px;
+}
+
+.hp{
+    font-size: 8px;
+    top: 24px; 
+    z-index: 1;
+}
+#player-hp{
+    left: 110px;
+}
+#enemy-hp{
+    left: 22px;
+}
+
+
+.visuals{
+    height: 48px;
+    width: 96px;
+}
+#player-visuals{
+    right: 0;
+}
+#enemy-visuals{
+    left: 0;
+}
+
+
+.line1{
+    width: 1px;
+    background-color: black;
+}
+#player-line1{
+    height: 20px;
+    top: 18px;
+    right: 10px;
+}
+#enemy-line1{
+    height: 10px;
+    left: 10px;
+    top: 18px;
+}
+
+
+.line2{
+    width: 70px;
+    height: 1px;
+    background-color: black;
+}
+#player-line2{
+    top: 38px;
+    right: 10px;
+}
+#enemy-line2{
+    top: 28px;
+    left: 10px;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2px 0 0 3px;
+    border-color: transparent transparent transparent #000f;
+
+}
+#player-triangle{
+    top: 37px; 
+    left: 13px;
+    transform: scaleX(-1);
+}
+#enemy-triangle{
+    top: 27px;
+    left: 80px;
+}
+
+.player-spawn-animation{
+    animation-name: player-spawn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes player-spawn{
+    0%{
+        bottom: -300px;
+    }
+    100%{
+        bottom: -2px;
+    }
+}
+.enemy-spawn-animation{
+    animation-name: enemy-spawn;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+@keyframs enemy-spawn{
+    0%{
+        right: -1000px;
+    }
+    100%{
+        right: -4px;
+    }
+}
